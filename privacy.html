@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Auto Click and Slide Routine Privacy Policy</title>
+  <title>MotionRoutine Privacy Policy</title>
   <style>
     :root {
       color-scheme: light;
@@ -75,74 +75,113 @@
 </head>
 <body>
   <main>
-    <h1>Auto Click and Slide Routine Privacy Policy</h1>
-    <p class="updated">Last updated: May 8, 2026</p>
+    <h1>MotionRoutine Privacy Policy</h1>
+    <p class="updated">Last updated: October 4, 2026</p>
 
     <p>
-      Auto Click and Slide Routine, also known as 오토 클릭·슬라이드 루틴,
+      MotionRoutine (Auto Click &amp; Swipe Macro), also known as 오토클릭·스와이프 루틴: 터치 매크로,
       helps users run routines that they create and save themselves, such as
       clicks and slide gestures in selected apps.
     </p>
 
     <h2>Data We Access</h2>
-    <p>Auto Click and Slide Routine uses Android Accessibility permission only to:</p>
+    <p>MotionRoutine uses Android Accessibility permission only to:</p>
     <ul>
       <li>Check the currently active app package name and screen change events.</li>
       <li>Run click and slide gestures that the user saved or manually started.</li>
+      <li>Find popup buttons or close icons configured by the user.</li>
     </ul>
     <p>
-      Auto Click and Slide Routine does not collect screen text, passwords, typed
-      input, contacts, photos, files, or precise location through Accessibility
-      permission.
+      When popup handling is enabled, MotionRoutine examines visible screen text
+      and content descriptions and, when necessary, temporarily processes a
+      screenshot on the device to locate the configured button or close icon.
+      Visible screen information may include content displayed by the target app.
+      This information is used for the user's configured automation, not
+      advertising profiling, and is not sent to external servers by MotionRoutine.
+    </p>
+    <p>
+      Popup diagnostic logs may retain visible text, matched button text, the
+      target and active app package names, timestamps, and processing results
+      in the app's private device storage. MotionRoutine does not use
+      Accessibility permission to access contacts, photo libraries, or files,
+      or to determine precise location.
     </p>
 
     <h2>Data Stored On Device</h2>
-    <p>Auto Click and Slide Routine stores routine settings on the device, including:</p>
+    <p>MotionRoutine stores routine settings on the device, including:</p>
     <ul>
       <li>Routine name.</li>
       <li>Selected target app name and package name.</li>
       <li>Click or slide coordinates saved as screen ratios.</li>
       <li>Schedule settings.</li>
       <li>Execution permission time granted after a rewarded ad.</li>
+      <li>Routine execution results and popup diagnostic logs, including the screen labels described above.</li>
     </ul>
-    <p>This data is stored locally on the device.</p>
+    <p>
+      This data is stored locally on the device. Popup diagnostic logs are
+      size-rotated (512 KiB per log file, with one previous file) rather than
+      deleted after 24 hours. Screenshots used for popup detection are processed
+      temporarily and are not retained in these logs. Clear the app's storage
+      through Android Settings to remove locally stored app data; this also
+      removes saved routines and settings.
+    </p>
 
     <h2>Ads</h2>
     <p>
-      Auto Click and Slide Routine uses Google AdMob to show banner ads and
-      rewarded ads. Google may collect or process device and ad interaction data
-      according to Google's advertising policies and privacy terms.
+      MotionRoutine uses the advertising provider enabled in the
+      installed release (Unity LevelPlay or AppLovin MAX) to show banner ads and
+      rewarded ads. The active provider, mediated advertising networks, and their partners may collect
+      or share approximate location inferred from IP addresses, personal
+      identifiers, device or other identifiers including advertising identifiers,
+      purchase history where applicable, ad-screen views and taps, other app
+      activity, and app diagnostics to provide and measure ads and prevent fraud.
+      Processing varies by the active provider and configuration. See
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a>
+      and <a href="https://legal.applovin.com/privacy/">AppLovin's Privacy Policy</a>.
+    </p>
+    <p>
+      In regions where MotionRoutine presents an advertising privacy choice,
+      the advertising SDK waits until the choice is saved. Selecting non-personalized
+      ads sends a no-consent and do-not-sell-or-share signal to the active
+      advertising provider. This choice is stored only on the device and can be
+      changed from Settings where this control is available. In other regions,
+      the app may initialize advertising without presenting this choice.
     </p>
 
     <h2>Data Sharing</h2>
     <p>
-      Auto Click and Slide Routine does not sell or share routine data with third
+      MotionRoutine does not sell or share routine data with third
       parties. Accessibility-derived information is not sent to external servers
-      by Auto Click and Slide Routine.
+      by MotionRoutine. Advertising-related data may be processed
+      or shared by the active advertising provider as described in the Ads section.
     </p>
 
     <h2>Permissions</h2>
-    <p>Auto Click and Slide Routine may request:</p>
+    <p>MotionRoutine may request:</p>
     <ul>
-      <li>Accessibility permission: to run user-saved click and slide routines.</li>
+      <li>Accessibility permission: to run user-saved click and slide routines and handle user-configured popups.</li>
       <li>Display over other apps: to show the control widget and repeat-click marker.</li>
       <li>Exact alarm permission: to start scheduled routines at the selected time.</li>
       <li>System settings modification: to temporarily dim the screen during a running routine when enabled.</li>
       <li>Notification permission: to show routine status and user-visible execution prompts.</li>
-      <li>Full-screen intent permission: to show an unlock prompt when a scheduled routine is due while the device is locked.</li>
       <li>Foreground service permission: to keep recording controls, overlay controls, and routine execution visible while a user-started or user-scheduled routine is running.</li>
     </ul>
 
     <h2>User Control</h2>
     <p>
-      Auto Click and Slide Routine runs only routines that the user creates,
+      MotionRoutine runs only routines that the user creates,
       saves, and manually starts or schedules. Running routines show user-visible
       controls where supported, including pause, resume, and stop.
+    </p>
+    <p>
+      Where the advertising privacy control is available, the user can change
+      the choice from Settings. In regions where the app requests this choice,
+      advertising is not initialized before the first choice is saved.
     </p>
 
     <h2>Children's Privacy</h2>
     <p>
-      Auto Click and Slide Routine is not designed for children and is not
+      MotionRoutine is not designed for children and is not
       intended to be targeted to children.
     </p>
 
