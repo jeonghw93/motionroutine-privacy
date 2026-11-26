@@ -76,7 +76,7 @@
 <body>
   <main>
     <h1>MotionRoutine Privacy Policy</h1>
-    <p class="updated">Last updated: October 4, 2026</p>
+    <p class="updated">Last updated: November 26, 2026</p>
 
     <p>
       MotionRoutine (Auto Click &amp; Swipe Macro), also known as 오토클릭·스와이프 루틴: 터치 매크로,
@@ -106,7 +106,6 @@
       Accessibility permission to access contacts, photo libraries, or files,
       or to determine precise location.
     </p>
-
     <h2>Data Stored On Device</h2>
     <p>MotionRoutine stores routine settings on the device, including:</p>
     <ul>
@@ -120,7 +119,7 @@
     <p>
       This data is stored locally on the device. Popup diagnostic logs are
       size-rotated (512 KiB per log file, with one previous file) rather than
-      deleted after 24 hours. Screenshots used for popup detection are processed
+      deleted after 24 hours. Screenshots used for popup handling are processed
       temporarily and are not retained in these logs. Clear the app's storage
       through Android Settings to remove locally stored app data; this also
       removes saved routines and settings.
@@ -130,13 +129,16 @@
     <p>
       MotionRoutine uses the advertising provider enabled in the
       installed release (Unity LevelPlay or AppLovin MAX) to show banner ads and
-      rewarded ads. The active provider, mediated advertising networks, and their partners may collect
+      rewarded ads. Depending on the installed release and mediation configuration,
+      LevelPlay's mediated networks may include Unity Ads and Liftoff Monetize
+      (Vungle). The active provider, mediated advertising networks, and their partners may collect
       or share approximate location inferred from IP addresses, personal
       identifiers, device or other identifiers including advertising identifiers,
       purchase history where applicable, ad-screen views and taps, other app
       activity, and app diagnostics to provide and measure ads and prevent fraud.
       Processing varies by the active provider and configuration. See
-      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a>
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a>,
+      <a href="https://www.liftoff.ai/privacy-policy/">Liftoff's Privacy Policy</a>,
       and <a href="https://legal.applovin.com/privacy/">AppLovin's Privacy Policy</a>.
     </p>
     <p>
@@ -146,6 +148,16 @@
       advertising provider. This choice is stored only on the device and can be
       changed from Settings where this control is available. In other regions,
       the app may initialize advertising without presenting this choice.
+    </p>
+
+    <h2>On-device Text Recognition SDK</h2>
+    <p>
+      Google ML Kit processes input images and recognized text on the device. The
+      SDK may send device and app information, per-installation identifiers, API
+      configuration, performance and usage metrics, and error codes to Google for
+      diagnostics and usage analytics. Screen images and recognized text are not
+      sent to Google. See <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms and Privacy</a>
+      and <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit Android data disclosure</a>.
     </p>
 
     <h2>Data Sharing</h2>
@@ -181,8 +193,26 @@
 
     <h2>Children's Privacy</h2>
     <p>
-      MotionRoutine is not designed for children and is not
-      intended to be targeted to children.
+      MotionRoutine is intended for users aged 13 and older. It is not directed
+      to children under 13.
+    </p>
+
+    <h2>Google Play Age Signals</h2>
+    <p>
+      Where applicable, MotionRoutine requests age information through Google Play
+      to support regional age protection requirements. Google Play may ask the user
+      to share age information or complete age verification. The returned age range
+      is used only to apply these protections. Raw age ranges, age sources, and
+      installation identifiers are not retained by the app, sent to its own servers
+      or advertising partners, or used for advertising targeting, marketing, or analytics.
+    </p>
+    <p>
+      Only a local protection flag, check time, and policy version are stored.
+      Advertising initialization is withheld for an under-13 result; that protection
+      remains if a later check fails or does not apply, and can be cleared by an
+      unambiguous eligible result. Users can retry or open Google Play. Unavailable
+      or unshared information does not delete routines, change an existing execution
+      license, or itself grant a license.
     </p>
 
     <h2>Contact</h2>
